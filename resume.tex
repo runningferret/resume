@@ -1,0 +1,110 @@
+% LaTeX file for resume 
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.55in,top=0.55in,bottom=0.55in]{geometry}
+% \usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+%Use this for sections that aren't indented by default, like an \itemize{description}
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+\begin{document}
+\begin{center}
+{\LARGE \textbf {Anthony Castiglione}} \\  1200 West Monroe Street \#417 \ \ \textbullet
+       \ \ Chicago, IL 60607 \\ (708) 878-1803 \ \ \textbullet \ \ anthony.castiglione@gmail.com
+	\end{center}
+\hrule
+\vspace{0.2in}
+{\large \textbf{Experience}}
+
+
+\begin{indentsection}{\parindent}
+	\headerrow
+		{\textbf{Backstop Solutions Group, LLC} }
+		{\textbf{Chicago, IL}}
+	\\
+	\headerrow
+		{\emph{Software Developer \& System Operations}}
+		{\emph{Aug 2007 -- Present}}
+
+	\begin{itemize}
+	\renewcommand{\labelitemi}{$-$}
+	\vspace{-0.1in}
+		\item Maintain and develop a web-based client relation management and accounting application written in Java on a JBoss/Hibernate platform
+		\item Responsibilities include major feature addition, overall platform stability, performance improvements, bug fixes, and new issue triage
+		\item Integrated flagship product and Microsoft Exchange 2007 via Exchange Web Services for syncing client contacts and selected email messages
+		\item Developed an internal Rails-based security application in order to audit and control access to client data; functions as the primary access method for sensitive client data in main production environment
+		\item Accepted position in Ruby on Rails development team after successfully deploying security application
+    \item Rails work includes improving cross-product download speed for large
+datasets from approximately 72 hours to under 7 via reworking SOAP calls as
+well as new feature development and creation of unit and Cucumber tests.
+		\item Implemented NTLMv2 authentication in flagship product by adopting an open source library to perform multiple simultaneous authentications against client and hosted Microsoft Exchange servers
+		\item Assisted production support team with critical system bugs and queries as an on-call technical lead, on a rotating schedule . Responsibilities include triage of new bugs, immediate response to critical client requests, and timely response to off-hours support team queries and requests as well as unplanned outages in the production system
+	\end{itemize}
+%\end{itemize}
+\end{indentsection}
+\vspace{0.1in}
+\hrule
+\vspace{0.2in}
+{\large \textbf{Education}}
+\begin{indentsection}{\parindent}
+  \headerrow
+		{\textbf{University of Illinois Urbana-Champaign}}
+		{\textbf{Urbana-Champaign, IL}}
+\vspace{0.1in}
+  \headerrow
+		{\emph{Course of Study: Computer Science}}
+		{\emph{Sep 03 to Dec 04}}
+	\headerrow
+		{\textbf{DePaul University}}
+		{\textbf{Chicago, IL}} 
+	\\
+	\headerrow
+		{\emph{Bachelor of Science, Computer Science}} 
+		{\emph{June 2005 to Nov 2007}}
+	\begin{itemize}
+	\renewcommand{\labelitemi}{$-$}
+		\vspace{-0.1in}
+		\item Accepted into and completed the Honors Software Engineering Program
+		\item Participated in Association of Computing Machinery and Linux User Group 
+		\item Elected to Upsilon Pi Epsilon Honor Society
+		\item Graduated summa cum laude; 3.87 GPA
+	\end{itemize}
+	{\emph{Relevant coursework}}
+	\begin{itemize}
+	\renewcommand{\labelitemi}{$-$}
+	\vspace{-0.1in}
+		\item Compiler Design -- Lexing/Parsing, assembly generation from AST, static analysis, dynamic bounds checking
+		\item Symbolic Programming -- Common LISP based, fundamentals of functional programming
+		\item Object Oriented Software Development -- OO principles and practices, design patterns, development lifecycles
+	\end{itemize}
+\end{indentsection}
+\vspace{0.1in}
+\hrule
+\vspace{0.2in}
+{\large \textbf{Core Technical Skills}}
+\begin{indentsection}{\parindent}
+\begin{description}
+	\item[Languages]
+	Java, Ruby (On Rails), SQL, JavaScript
+	\item[Tools]
+	Vim, Subversion, Git, Mercurial, IntelliJ, Ant, Unix command line tools
+	\item[Limited Experience]
+	C++, Python, Django, PHP, Zend, jQuery, Common Lisp, \LaTeX, Perl
+\end{description}
+\end{indentsection}
+\end{document}
