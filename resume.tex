@@ -1,4 +1,4 @@
-% LaTeX file for resume 
+% LaTeX file for resume
 
 \documentclass[10pt,letterpaper]{article}
 \usepackage[letterpaper,margin=0.55in,top=0.55in,bottom=0.55in]{geometry}
@@ -24,13 +24,48 @@
 
 \begin{document}
 \begin{center}
-{\LARGE \textbf {Anthony Castiglione}} \\  1200 West Monroe Street \#417 \ \ \textbullet
-       \ \ Chicago, IL 60607 \\ (708) 878-1803 \ \ \textbullet \ \ anthony.castiglione@gmail.com
+{\LARGE \textbf {Anthony Castiglione}} \\ (708) 878-1803 \ \ \textbullet \ \ anthony.castiglione@gmail.com
 	\end{center}
 \hrule
 \vspace{0.2in}
 {\large \textbf{Experience}}
 
+\begin{indentsection}{\parindent}
+	\headerrow
+		{\textbf{Yello (formerly Recsolu)} }
+		{\textbf{Chicago, IL}}
+	\\
+	\headerrow
+		{\emph{Senior Software Developer}}
+		{\emph{June 2015 -- Present}}
+
+	\begin{itemize}
+	\renewcommand{\labelitemi}{$-$}
+	\vspace{-0.1in}
+    \item Responsible for new feature development on a Rails-based SaaS product
+    \item Educated development team on testing best-practices and greatly increased unit-testing coverage of the application
+    \item Mentored several junior developers on best practices for coding and testing
+	\end{itemize}
+\end{indentsection}
+
+\begin{indentsection}{\parindent}
+	\headerrow
+		{\textbf{DialogTech (formerly Ifbyphone)} }
+		{\textbf{Chicago, IL}}
+	\\
+	\headerrow
+		{\emph{Senior Software Developer}}
+		{\emph{October 2013 -- June 2015}}
+
+	\begin{itemize}
+	\renewcommand{\labelitemi}{$-$}
+	\vspace{-0.1in}
+    \item Implemented a Ruby back-end for VOIP based phone call processing based on the Adhearsion framework
+    \item Maintained and developed a redundant cluster of call processing software including servers running Kamailio, Adhearsion, Asterisk, and Lumenvox ASR
+    \item Built a pure-Ruby SMS gateway management application to handle throttling and API registration of client SMS portals
+    \item Identified production critical memory leak in a combination of gems and implemented an upgrade plan, improving expected uptime from days to months
+	\end{itemize}
+\end{indentsection}
 
 \begin{indentsection}{\parindent}
 	\headerrow
@@ -39,25 +74,17 @@
 	\\
 	\headerrow
 		{\emph{Software Developer \& System Operations}}
-		{\emph{Aug 2007 -- Present}}
+		{\emph{Aug 2007 -- October 2013}}
 
 	\begin{itemize}
 	\renewcommand{\labelitemi}{$-$}
 	\vspace{-0.1in}
-    \item Produced code in a focused pair programming and agile (XP)
-environment
-    \item Practiced test driven development as a primary development
-methodology, reducing bug counts and increasing confidence in the software
-written
+		\item Maintained and developed a web-based client relation management and accounting application written in Java on a JBoss/Hibernate platform
+		\item Assisted production support team with critical system bugs and queries as an on-call technical lead, on a rotating schedule
+    \item Rails work includes improving cross-product backend import of large datasets, new feature development, maintenance of legacy code and creation of unit and Cucumber tests via Test-Driven Development
 		\item Developed an internal Rails-based security application in order to audit and control access to client data; functions as the primary access method for sensitive client data in main production environment
-    \item Rails work includes improving cross-product backend import of large
-datasets, new feature development, maintenance of legacy code and creation of
-unit and Cucumber tests via Test-Driven Development
-		\item Maintain and develop a web-based client relation management and accounting application written in Java on a JBoss/Hibernate platform
-		\item Responsibilities include major feature addition, overall platform stability, performance improvements, bug fixes, and new issue triage
-		\item Integrated flagship product and Microsoft Exchange 2007 via Exchange Web Services for syncing client contacts and selected email messages
-		\item Implemented NTLMv2 authentication in flagship product by adopting an open source library to perform multiple simultaneous authentications against client and hosted Microsoft Exchange servers
-		\item Assisted production support team with critical system bugs and queries as an on-call technical lead, on a rotating schedule . Responsibilities include triage of new bugs, immediate response to critical client requests, and timely response to off-hours support team queries and requests as well as unplanned outages in the production system
+    \item Responsibilities included major feature addition, overall platform stability, performance improvements, bug fixes, and new issue triage
+    \item Implemented NTLMv2 authentication in flagship product by adopting an open source library to perform multiple simultaneous authentications against client and hosted Microsoft Exchange servers
 	\end{itemize}
 %\end{itemize}
 \end{indentsection}
@@ -75,27 +102,18 @@ unit and Cucumber tests via Test-Driven Development
 		{\emph{Sep 03 to Dec 04}}
 	\headerrow
 		{\textbf{DePaul University}}
-		{\textbf{Chicago, IL}} 
+		{\textbf{Chicago, IL}}
 	\\
 	\headerrow
-		{\emph{Bachelor of Science, Computer Science}} 
+		{\emph{Bachelor of Science, Computer Science}}
 		{\emph{June 2005 to Nov 2007}}
-	\begin{itemize}
-	\renewcommand{\labelitemi}{$-$}
-		\vspace{-0.1in}
-		\item Accepted into and completed the Honors Software Engineering Program
-		\item Participated in Association of Computing Machinery and Linux User Group 
-		\item Elected to Upsilon Pi Epsilon Honor Society
-		\item Graduated summa cum laude; 3.87 GPA
-	\end{itemize}
-	{\emph{Relevant coursework}}
-	\begin{itemize}
-	\renewcommand{\labelitemi}{$-$}
-	\vspace{-0.1in}
-		\item Compiler Design -- Lexing/Parsing, assembly generation from AST, static analysis, dynamic bounds checking
-		\item Symbolic Programming -- Common LISP based, fundamentals of functional programming
-		\item Object Oriented Software Development -- OO principles and practices, design patterns, development lifecycles
-	\end{itemize}
+  \begin{itemize}
+  \renewcommand{\labelitemi}{$-$}
+    \vspace{-0.1in}
+    \item Participated in Association of Computing Machinery and Linux User Group
+    \item Graduated summa cum laude; 3.87 GPA
+  \end{itemize}
+
 \end{indentsection}
 \vspace{0.1in}
 \hrule
