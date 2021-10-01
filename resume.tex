@@ -10,137 +10,175 @@
 
 \newcommand{\headerrow}[2]
 {\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
-	#1 &
-	#2 \\
+  #1 &
+  #2 \\
 \end{tabular*}}
 
 %Use this for sections that aren't indented by default, like an \itemize{description}
 \newenvironment{indentsection}[1]%
 {\begin{list}{}%
-	{\setlength{\leftmargin}{#1}}%
-	\item[]%
+  {\setlength{\leftmargin}{#1}}%
+  \item[]%
 }
 {\end{list}}
 
 \begin{document}
 \begin{center}
-{\LARGE \textbf {Anthony Castiglione}} \\ (708) 878-1803 \ \ \textbullet \ \ anthony.castiglione@gmail.com
-	\end{center}
+  {\LARGE \textbf {Anthony Castiglione}} \\ (708) 878-1803 \ \ \textbullet \ \ anthony.castiglione@gmail.com
+\end{center}
+\hrule
+\begin{center}
+  {\Large \textbf {Lead Software Engineer}}
+\end{center}
+\par I am an experienced technical leader with a primary focus on craftsmanship and mentorship. Currently primarily focused on Ruby and associated libraries and tools. Through my skills in software design and testing I aim to produce functional, maintainable software that meets business needs, and I strive to teach others how to do the same. Mentorship is a primary foundation for me in order help others grow their skillsets as well as grow my own.
+\noindent \mbox{}\\
+
+My ideal next role includes interesting technical problems, opportunities to mentor and teach, and the possibility to give back to the community through open source contributions. Aligning with a highly collaborative team to achieve the needs of the busines is my goal for future endeavors.
+
+\vspace{0.2in}
 \hrule
 \vspace{0.2in}
-{\large \textbf{Experience}}
+
+\noindent {\large \textbf{Experience}}
 
 \begin{indentsection}{\parindent}
-	\headerrow
-		{\textbf{Praetorian Security} }
-		{\textbf{Austin, TX}}
-	\\
-	\headerrow
-		{\emph{Staff Software Developer}}
-		{\emph{Oct 2020 - Present}}
+  \headerrow
+    {\textbf{UrbanBound} }
+    {\textbf{Chicago, IL}}
+  \\
+  \headerrow
+    {\emph{Lead Engineer}}
+    {\emph{Mar 2021 - Current}}
 
-	\headerrow
-		{\textbf{Kenna Security (formerly Risk.io)} }
-		{\textbf{Chicago, IL}}
-	\\
-	\headerrow
-		{\emph{Lead Software Developer}}
-		{\emph{Feb 2016 -- Oct 2020}}
+  \begin{itemize}
+  \renewcommand{\labelitemi}{$-$}
+  \vspace{-0.1in}
+    \item Primarly focused on upgrading the legacy Rails app from 4.2 to 5.0, taking over a difficult project and completing it with a near-zero error rate related to the upgrade
+    \item Upgraded application infrastruce, updating or replacing versions of many core libraries that were out of date (Pow, Active Admin, Puma, Selenium/Capybara)
+  \end{itemize}
+\end{indentsection}
 
-	\begin{itemize}
-	\renewcommand{\labelitemi}{$-$}
-	\vspace{-0.1in}
+\begin{indentsection}{\parindent}
+  \headerrow
+    {\textbf{Praetorian Security} }
+    {\textbf{Austin, TX}}
+  \\
+  \headerrow
+    {\emph{Staff Software Developer}}
+    {\emph{Oct 2020 - Jan 2021}}
+
+  \begin{itemize}
+  \renewcommand{\labelitemi}{$-$}
+  \vspace{-0.1in}
+    \item Java development on a highly factored service based application architecture
+    \item Added ability to track and audit client data ingestion across multiple services
+  \end{itemize}
+\end{indentsection}
+
+\begin{indentsection}{\parindent}
+  \headerrow
+    {\textbf{Kenna Security (formerly Risk.io)} }
+    {\textbf{Chicago, IL}}
+  \\
+  \headerrow
+    {\emph{Lead Software Developer}}
+    {\emph{Feb 2016 -- Oct 2020}}
+
+  \begin{itemize}
+  \renewcommand{\labelitemi}{$-$}
+  \vspace{-0.1in}
     \item Responsible for new feature development on a Ruby/Rails-based SaaS product in the security space in an individual role as well as with a small team
     \item Instrumental in developing an asynchronous data ingestion pipeline for client data capable of parsing and persisting hundreds of millions of records daily
     \item Extensively mentored developers at all skill levels on technical and career related matters
     \item Led a team of 3-5 developers working on new feature development, platform maintenance, and on-call duties
     \item Interfaced with Operations, Site Reliability, and Product Management teams on cross-team collaboration, primarily focused on project planning and providing direction for Product/Project Management around technical roadmap planning at a company level
-	\end{itemize}
+  \end{itemize}
 \end{indentsection}
 
 \begin{indentsection}{\parindent}
-	\headerrow
-		{\textbf{Yello (formerly Recsolu)} }
-		{\textbf{Chicago, IL}}
-	\\
-	\headerrow
-		{\emph{Senior Software Developer}}
-		{\emph{Jun 2015 -- Feb 2016}}
+  \headerrow
+    {\textbf{Yello (formerly Recsolu)} }
+    {\textbf{Chicago, IL}}
+  \\
+  \headerrow
+    {\emph{Senior Software Developer}}
+    {\emph{Jun 2015 -- Feb 2016}}
 
-	\begin{itemize}
-	\renewcommand{\labelitemi}{$-$}
-	\vspace{-0.1in}
+  \begin{itemize}
+  \renewcommand{\labelitemi}{$-$}
+  \vspace{-0.1in}
     \item Responsible for new feature development on a Rails-based SaaS product
     \item Mentored several junior developers on best practices for coding and testing
-	\end{itemize}
+  \end{itemize}
 \end{indentsection}
 
 \begin{indentsection}{\parindent}
-	\headerrow
-		{\textbf{DialogTech (formerly Ifbyphone)} }
-		{\textbf{Chicago, IL}}
-	\\
-	\headerrow
-		{\emph{Senior Software Developer}}
-		{\emph{Oct 2013 -- June 2015}}
+  \headerrow
+    {\textbf{DialogTech (formerly Ifbyphone)} }
+    {\textbf{Chicago, IL}}
+  \\
+  \headerrow
+    {\emph{Senior Software Developer}}
+    {\emph{Oct 2013 -- June 2015}}
 
-	\begin{itemize}
-	\renewcommand{\labelitemi}{$-$}
-	\vspace{-0.1in}
+  \begin{itemize}
+  \renewcommand{\labelitemi}{$-$}
+  \vspace{-0.1in}
     \item Implemented a Ruby back-end for VOIP based phone call processing based on the Adhearsion framework
     \item Maintained and developed a redundant cluster of call processing software including servers running Kamailio, Adhearsion, Asterisk, and Lumenvox ASR
     \item Identified production critical memory leak in a combination of gems and implemented an upgrade plan, improving expected uptime from days to months
-	\end{itemize}
+  \end{itemize}
 \end{indentsection}
-
+\pagebreak
+\begin{center}
+  {\LARGE \textbf {Anthony Castiglione}} \\ (708) 878-1803 \ \ \textbullet \ \ anthony.castiglione@gmail.com
+\end{center}
+\hrule
+\vspace{0.2in}
 \begin{indentsection}{\parindent}
-	\headerrow
-		{\textbf{Backstop Solutions Group, LLC} }
-		{\textbf{Chicago, IL}}
-	\\
-	\headerrow
-		{\emph{Software Developer \& System Operations}}
-		{\emph{Aug 2007 -- Oct 2013}}
+  \headerrow
+    {\textbf{Backstop Solutions Group, LLC} }
+    {\textbf{Chicago, IL}}
+  \\
+  \headerrow
+    {\emph{Software Developer \& System Operations}}
+    {\emph{Aug 2007 -- Oct 2013}}
 
-	\begin{itemize}
-	\renewcommand{\labelitemi}{$-$}
-	\vspace{-0.1in}
-		\item Maintained and developed a web-based client relation management and accounting application written in Java on a JBoss/Hibernate platform
-		\item Assisted production support team with critical system bugs and queries as an on-call technical lead, on a rotating schedule
+  \begin{itemize}
+  \renewcommand{\labelitemi}{$-$}
+  \vspace{-0.1in}
+    \item Maintained and developed a web-based client relation management and accounting application written in Java on a JBoss/Hibernate platform
+    \item Assisted production support team with critical system bugs and queries as an on-call technical lead, on a rotating schedule
     \item Ruby/Rails work includes improving cross-product backend import of large datasets, new feature development, maintenance of legacy code and creation of unit and Cucumber tests via Test-Driven Development including major feature addition, overall platform stability, performance improvements, bug fixes, and new issue triage
-	\end{itemize}
-%\end{itemize}
+  \end{itemize}
 \end{indentsection}
-\vspace{0.1in}
-\hrule
-\vspace{0.2in}
-{\large \textbf{Education}}
+\noindent {\large \textbf{Education}}
 \begin{indentsection}{\parindent}
-	\headerrow
-		{\textbf{DePaul University}}
-		{\textbf{Chicago, IL}}
+  \headerrow
+    {\textbf{DePaul University}}
+    {\textbf{Chicago, IL}}
   \vspace{0.1in}
-	\headerrow
-		{\emph{Bachelor of Science, Computer Science}}
-		{\emph{Jun 2005 to Nov 2007}}
   \headerrow
-		{\textbf{University of Illinois Urbana-Champaign}}
-		{\textbf{Urbana-Champaign, IL}}
+    {\emph{Bachelor of Science, Computer Science}}
+    {\emph{Jun 2005 to Nov 2007}}
   \headerrow
-		{\emph{Course of Study: Computer Science}}
-		{\emph{Sep 2003 to Dec 2004}}
+    {\textbf{University of Illinois Urbana-Champaign}}
+    {\textbf{Urbana-Champaign, IL}}
+  \headerrow
+    {\emph{Course of Study: Computer Science}}
+    {\emph{Sep 2003 to Dec 2004}}
 
 \end{indentsection}
 \vspace{0.1in}
 \hrule
 \vspace{0.2in}
-{\large \textbf{Core Technical Skills}}
+\noindent {\large \textbf{Core Technical Skills}}
 \begin{indentsection}{\parindent}
 \begin{description}
-	\item[Languages \& Tools]
+  \item[Languages \& Tools]
   \item Ruby (On Rails), SQL, Vim, Git, Linux, Resque/Sikekiq, Elasticsearch
-	\item[Limited Experience]
-	\item Go, Java, Javascript/Typescript, React, Python/Django, Common Lisp, \LaTeX, Perl, Ansible
+  \item[Limited Experience]
+  \item Go, Java, Javascript/Typescript, React, Python/Django, Common Lisp, \LaTeX, Perl, Ansible
 \end{description}
 \end{indentsection}
 \end{document}
